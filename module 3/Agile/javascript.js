@@ -1,8 +1,7 @@
 function additions(){
     var theNewWord = document.forms["form"]["newWord"].value;
     var theNewNumber = document.forms["form"]["newNumber"].value;
-    alert(theNewNumber);
-    alert(theNewWord);
+    
     if(theNewWord==""){
         alert("please enter a word to check");
         return false;

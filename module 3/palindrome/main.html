@@ -11,9 +11,29 @@
   </script>
 </head>
 
-<form name="myinput">
-
-Input text here: <input type="text" name="input" value=""><br><br>
-<input type="button" value="submit" onclick="palindrome()">
-<p id=results></p>
-</form>
+<body>
+<div class="Row">
+  <div class="Column">
+      <h2>Palindrome</h2>
+      <form name="form">
+          add word: <input type="text" name="input" value=""><br />
+          List 1 or 2?: <input type="number" name="Number" value=""><br /><br />
+          <input type="button" value="test" onclick="palindrome()">
+      </form>
+  </div>
+  <div class="Column">
+      <h2>List 1</h2>
+      <table id="List1">
+      </table>
+      <br /><br />
+      <input type="button" value="Clear" onclick="clearList1()">
+  </div>
+  <div class="Column">
+      <h2>List 2</h2>
+      <table id="List2">
+      </table>
+      <br /> <br />
+      <input type="button" value="clear" onclick="clearList2()">
+  </div>
+</div>
+</body>
