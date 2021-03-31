@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+
+.Row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Column{
+    flex: 33%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .Row{
+        flex-direction:column;
+    }
+}

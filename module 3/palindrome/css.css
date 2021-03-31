@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(248, 242, 242);
+  }
+  
+  p {
+  width: 300px;
+  padding: 50px;
+  margin: 20px;
+  }
+  
+  p {
+    color: rgb(0, 0, 0);
+    font-family: verdana;
+    font-size: 30px;
+  }
+  
+  form{
+      text-align: center;
+  }

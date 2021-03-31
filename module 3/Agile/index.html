@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> agile</title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        
+        <div class="Row">
+            <div class="Column">
+                <h2>Form to obtain a word and place it in a list</h2>
+                <form name="form">
+                    add word: <input type="text" name="newWord" value=""><br />
+                    List 1 or 2?: <input type="number" name="newNumber" value=""><br /><br />
+                    <input type="button" value="Add" onclick="additions()">
+                </form>
+            </div>
+            <div class="Column">
+                <h2>List 1</h2>
+                <table id="List1">
+                </table>
+                <br /><br />
+                <input type="button" value="Clear" onclick="clearList1()">
+            </div>
+            <div class="Column">
+                <h2>List 2</h2>
+                <table id="List2">
+                </table>
+                <br /> <br />
+                <input type="button" value="clear" onclick="clearList2()">
+            </div>
+        </div>
+    </body>
+</html>
