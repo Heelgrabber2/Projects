@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Exercise - Javascript Sampling</title>
+
+    <link rel="stylesheet" href="Stylesheets.css">
+    <script src="Javascript.js"></script>
+</head>
+<body>
+    <h1>API Encryption</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2>user information</h2>
+            <label for="choice">All meat or meat with filler?</label>
+            <select id="choice">
+                <option value="all-meat">All meat</option>
+                <option value="meat-and-filler">Meat and filler</option>
+            </select><br />
+            <label for="Paragraphs">How many paragraphs?</label>
+            <select id="Paragraphs">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select><br />
+            
+           
+            <input class="button" type="button" value="Bacon Ipsum" onclick="getBaconipsum()">
+        </div>
+        <div class="myflexboxColumn">
+            <h2>raw JSON</h2>
+            <p id="rawdata">
+            </p>
+        </div>
+        <div class="myflexboxColumn">
+            <h2>formatted paragraphs</h2>
+            <p id="formatteddata">
+            </p>
+        </div>
+        <div class="myflexboxColumn">
+            <h2>encrypted data </h2>
+            <p id="encrypteddata">
+            </p>
+        </div>
+    </div>    
+</body>
+</html>

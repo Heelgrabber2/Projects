@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mod 4</title>
+
+    <link rel="stylesheet" href="format.css">
+    <script src="Javascript.js"> </script>
+</head>
+<body>
+    <h1>API</h1>
+    <div class="myflexboxRow">
+        <div class="myflexboxColumn">
+            <h2> user info</h2>
+            <label for="newParagraphs">paragraphs?</label>
+            <select id="newParagraphs">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select><br /><br />
+            <input type="button" value="Get my Bacon Ipsum!" onclick="getBaconipsum()">
+        </div>
+        <div class="myflexboxColumn">
+            <h2>raw JSON</h2>
+            <p id="myRawData">
+            </p>
+        </div>
+        <div class="myflexboxColumn">
+            <h2>formatted paragraphs</h2>
+            <p id="myFormattedData">
+            </p>
+        </div>
+    </div>    
+</body>
+</html>
