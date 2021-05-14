@@ -2,13 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
 
-var incorrect=0;
+var incorrects=0;
 var corrects=0;
+
 let correctbutton = document.querySelector("#Apply");
-correctbutton.addEventListener("click",()=>{sendApiRequest()});
+correctbutton.addEventListener("click",()=>{
+    var run=0;
+    sendApiRequest()
+});
 
 async function sendApiRequest(){
- 
+  
+    document.getElementById("score").innerHTML= ("Correct: "+corrects+" / "+"Inccorect: "+incorrects);
+    
 
     document.getElementById("Apply").disabled = true;
     
@@ -78,7 +84,7 @@ correctbutton.addEventListener("click",()=>{
     document.getElementById("answer"+choice1).disabled = true;
     document.getElementById("i").style.backgroundColor = "#008000";
     document.getElementById("Apply").disabled = false;
-    correct+1;
+   corrects= corrects+1;
 
 });
 
@@ -90,7 +96,7 @@ incorrect_answers2.addEventListener("click",()=>{
     document.getElementById("answer"+choice1).disabled = true;
     document.getElementById("i").style.backgroundColor = "#ff0000";
     document.getElementById("Apply").disabled = false;
-    incorrect+1;
+    incorrects = incorrects+1;
 });
 
 let incorrect_answers3 = document.querySelector("#answer"+choice3);
@@ -101,7 +107,7 @@ incorrect_answers3.addEventListener("click",()=>{
     document.getElementById("answer"+choice1).disabled = true;
     document.getElementById("i").style.backgroundColor = "#ff0000";
     document.getElementById("Apply").disabled = false;
-    incorrect+1;
+    incorrects=incorrects+1;
 });
 
 let incorrect_answers4 = document.querySelector("#answer"+choice4);
@@ -112,7 +118,7 @@ incorrect_answers4.addEventListener("click",()=>{
     document.getElementById("answer"+choice1).disabled = true;
     document.getElementById("i").style.backgroundColor = "#ff0000";
     document.getElementById("Apply").disabled = false;
-    incorrect+1;
+    incorrects=incorrects+1;
 });
 
 
