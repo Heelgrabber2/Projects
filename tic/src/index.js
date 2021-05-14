@@ -1,3 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+
 function Square(props) {
     return (
       <button className="square" onClick={props.onClick}>
@@ -60,7 +65,7 @@ function Square(props) {
       if (calculateWinner(squares) || squares[i]) {
         return;
       }
-      squares[i] = this.state.xIsNext ? "X" : "O";
+      squares[i] = this.state.xIsNext ? "K" : "C";
       this.setState({
         history: history.concat([
           {

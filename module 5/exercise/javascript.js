@@ -1,11 +1,14 @@
 async function getBaconipsum() {
-   
+   var marvel = "https://opentdb.com/api.php?amount=10&category=9&type=boolean";
     var apiString = "https://baconipsum.com/api/";
     var mid = document.getElementById("choice").value;
     var theNewParagraphs = document.getElementById("Paragraphs").value;
     apiString = apiString + "?type=" + mid + "&paras=" + theNewParagraphs;
-    var response = await fetch(apiString);
-  
+
+    
+    var response = await fetch(marvel);
+    alert("got a response");
+    alert(response);
    
     document.getElementById("rawdata").innerHTML = "";   
     document.getElementById("formatteddata").innerHTML = "";   

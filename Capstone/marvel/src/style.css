@@ -1,0 +1,37 @@
+body{
+    font-family: 'Roboto Condensed' , sans-serif
+    background-color rgb(64, 65, 66);
+}
+a:link,
+a:visited{
+    color: #ED462F;
+    text-decoration: none;
+    transition: all 0.25;
+}
+
+a:hover,
+a:active{
+    color: white;
+    background-color: #ED462F;
+    box-shadow: a 1rem 2rem rgba(black,-4);
+    padding: 2px;
+}
+
+
+.jumbotron{
+    background-color: #151515;
+}
+
+.header-main-title{
+    color: #fff;
+}
+.character-search-box, .search-character-button{
+    background-color: #ED462F;
+}
+#characterMainTitle, #comicMainTitle{
+    color: #FFFFFF;
+}
+.card{
+    border: none;
+    border-radius: 2px;
+}
